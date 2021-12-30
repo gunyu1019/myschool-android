@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="@string/home"
+        android:visible="true" />
+    <item
+        android:id="@+id/meal_menu"
+        android:icon="@drawable/ic_baseline_meal"
+        android:title="@string/meal_description"
+        android:visible="true" />
+    <item
+        android:id="@+id/timetable_menu"
+        android:icon="@drawable/ic_baseline_timetable"
+        android:title="@string/timetable_description"
+        android:visible="true" />
+    <item
+        android:id="@+id/setting_menu"
+        android:icon="@drawable/ic_baseline_settings"
+        android:title="@string/timetable_description"
+        android:visible="true" />
+</menu>

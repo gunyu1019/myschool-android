@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="box_background">#171717</color>
+    <color name="text_color">#FFFFFFFF</color>
+
+    <color name="warning_food">#969600</color>
+    <color name="star_food">#0082AF</color>
+    <color name="warning_food_icon">#FFFF57</color>
+    <color name="star_food_icon">#4BC8FF</color>
+</resources>
