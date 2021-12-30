@@ -98,3 +98,6 @@ lint/tmp/
 /build
 /captures
 .cxx
+
+.idea/deploymentTargetDropDown.xml
+.idea/discord.xml
