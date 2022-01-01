@@ -1,13 +1,12 @@
 package kr.yhs.meal.adapter.mealSection
 
-import android.content.Context
+import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import kr.yhs.meal.R
-import org.w3c.dom.Text
 
 class MealSectionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val mealTypeTextView = itemView.findViewById<TextView>(R.id.mealTypeTextView)
@@ -17,7 +16,7 @@ class MealSectionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) 
     private val mealRecyclerView = itemView.findViewById<RecyclerView>(R.id.mealSectionRecyclerView)
     private val noMealLayout = itemView.findViewById<LinearLayout>(R.id.noMealLayout)
 
-    fun onBind(data: MealSectionData) {
+    fun onBind(data: MealSectionData, leftListener: ((String) -> Unit)?, rightListener: ((String) -> Unit)?) {
         mealTypeTextView.text = data.mealType
         caloriesTextView.text = data.calories.toString()
 
@@ -32,10 +31,12 @@ class MealSectionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) 
         }
 
         leftButton.setOnClickListener {
-            data.leftListener.invoke("caloriesData")
+            Log.d("meal-section [Button]", "leftButton onClicked()")
+            leftListener?.invoke(data.mealType)
         }
         rightButton.setOnClickListener {
-            data.rightListener.invoke("originData")
+            Log.d("meal-section [Button]", "rightButton onClicked()")
+            rightListener?.invoke(data.mealType)
         }
         bindingAdapter
     }

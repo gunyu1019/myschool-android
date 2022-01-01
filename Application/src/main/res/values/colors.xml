@@ -14,6 +14,7 @@
     <color name="star_food_icon">#0082AF</color>
 
     <color name="timetable_bold">#FF00ACFF</color>
+    <color name="popup_button">#FF00ACFF</color>
 
     <color name="box_background">#FFFFFFFF</color>
     <color name="text_color">#FF000000</color>
