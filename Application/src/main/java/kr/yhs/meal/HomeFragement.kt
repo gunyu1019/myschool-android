@@ -38,9 +38,9 @@ class HomeFragement : Fragment(R.layout.home_fragment) {
             ), StarlinkMenuData(
                 icon = R.drawable.starlink_classting
             ), StarlinkMenuData(
-                icon = R.drawable.starlink_iamschool
+                icon = R.drawable.starlink_zoom
             ), StarlinkMenuData(
-                icon = R.drawable.starlink_riroschool
+                icon = R.drawable.starlink_teams
             )
         )
         binding.starlinkRecycleView.adapter = StarlinkMenuAdapter(starItem)
