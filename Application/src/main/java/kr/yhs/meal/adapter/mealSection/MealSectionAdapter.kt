@@ -1,24 +1,22 @@
-package kr.yhs.meal.adapter.homeMeal
+package kr.yhs.meal.adapter.mealSection
 
-import android.app.Activity
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kr.yhs.meal.R
-import javax.xml.parsers.FactoryConfigurationError
 
-class MealMenuAdapter(private val context: Context, private var data: ArrayList<MealMenuData>? = null): RecyclerView.Adapter<MealMenuViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MealMenuViewHolder {
+class MealSectionAdapter(private val context: Context, private var data: ArrayList<MealSectionData>? = null): RecyclerView.Adapter<MealSectionViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MealSectionViewHolder {
         val context: Context = parent.context
         val view: View = LayoutInflater
             .from(context)
-            .inflate(R.layout.meal_item, parent, false)
-        return MealMenuViewHolder(view, true)
+            .inflate(R.layout.meal_section_item, parent, false)
+        return MealSectionViewHolder(view, true)
     }
 
-    override fun onBindViewHolder(holder: MealMenuViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MealSectionViewHolder, position: Int) {
         if (this.data == null)
             return
         holder.onBind(this.data!![position], context)

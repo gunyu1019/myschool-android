@@ -12,7 +12,7 @@ import kr.yhs.meal.R
 
 
 
-class StarlinkMenuAdapter(private var mainContext: Activity, private var data: ArrayList<StarlinkMenuData>? = null): RecyclerView.Adapter<StarlinkMenuViewHolder>() {
+class StarlinkMenuAdapter(private var data: ArrayList<StarlinkMenuData>? = null): RecyclerView.Adapter<StarlinkMenuViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StarlinkMenuViewHolder {
         val context: Context = parent.context
         val view: View = LayoutInflater

@@ -15,7 +15,9 @@
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/timetable_current_shape.xml" value="0.234375" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/timetable_line.xml" value="0.40208333333333335" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/timetable_shape.xml" value="0.40208333333333335" />
-        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/home_fragment.xml" value="0.3859375" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/meal_fragment.xml" value="0.25" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/meal_item.xml" value="0.3854166666666667" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/meal_section_item.xml" value="0.5" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/starlink_item.xml" value="0.3854166666666667" />

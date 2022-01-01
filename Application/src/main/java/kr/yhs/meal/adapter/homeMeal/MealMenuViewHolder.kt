@@ -1,8 +1,6 @@
 package kr.yhs.meal.adapter.homeMeal
 
-import android.app.Activity
-import android.content.res.ColorStateList
-import android.graphics.Color
+import android.content.Context
 import android.text.Spannable
 import android.text.Spanned
 import android.text.style.BackgroundColorSpan
@@ -13,11 +11,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kr.yhs.meal.R
 
-class MealMenuViewHolder(itemView: View, private val setIcon: Boolean) : RecyclerView.ViewHolder(itemView) {
+class MealMenuViewHolder(itemView: View, private val setIcon: Boolean) :
+    RecyclerView.ViewHolder(itemView) {
     private var nameTextView = itemView.findViewById<TextView>(R.id.foodTextView)
     private var contentImageView = itemView.findViewById<ImageView>(R.id.mealImageView)
 
-    fun onBind(data: MealMenuData, context: Activity) {
+    fun onBind(data: MealMenuData, context: Context) {
         if (setIcon) {
             nameTextView.text = data.name
             when {
@@ -33,7 +32,7 @@ class MealMenuViewHolder(itemView: View, private val setIcon: Boolean) : Recycle
             }
         } else {
             contentImageView.visibility = View.GONE
-            contentImageView.setPadding(10, 0, 10,0)
+            contentImageView.setPadding(10, 0, 10, 0)
             nameTextView.setText(data.name, TextView.BufferType.SPANNABLE)
             val span = nameTextView.text as Spannable
             when {
