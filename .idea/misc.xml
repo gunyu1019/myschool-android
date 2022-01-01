@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/background_box.xml" value="0.4015625" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/background_box_v1.xml" value="0.3299145299145299" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/background_box_v2.xml" value="0.3299145299145299" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-v24/background_box_v2.xml" value="0.3299145299145299" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4015625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/background_box.xml" value="0.2890625" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/background_box_v1.xml" value="0.3299145299145299" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/ic_baseline_home.xml" value="0.4015625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/ic_baseline_search.xml" value="0.4015625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/ic_baseline_star.xml" value="0.4015625" />

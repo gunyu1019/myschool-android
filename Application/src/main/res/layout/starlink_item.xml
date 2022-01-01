@@ -6,7 +6,7 @@
     android:layout_width="100dp"
     android:layout_height="100dp"
     android:layout_gravity="center"
-    android:background="@drawable/background_box">
+    android:background="@drawable/background_box_v2">
 
     <ImageView
         android:id="@+id/itemImage"

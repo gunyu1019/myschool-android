@@ -5,5 +5,7 @@ import kr.yhs.meal.adapter.homeMeal.MealMenuAdapter
 data class MealSectionData (
     val mealType: String,
     val calories: Float = 0.0F,
-    val adapter: MealMenuAdapter? = null
+    val adapter: MealMenuAdapter? = null,
+    val leftListener: ((String) -> Unit) = {},
+    val rightListener: ((String) -> Unit) = {}
 )

@@ -8,7 +8,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#00525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -19,7 +19,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#06525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -30,7 +30,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#09525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -41,7 +41,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#0B525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -52,7 +52,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#0D525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -63,7 +63,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#10525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -74,7 +74,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#12525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -85,7 +85,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#15525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -96,7 +96,7 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#17525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item>
@@ -107,13 +107,13 @@
                 android:right="1.5dp"
                 android:top="1.5dp" />
             <solid android:color="#1A525252" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item> <!-- Background -->
     <item>
         <shape>
             <solid android:color="@color/box_background" />
-            <corners android:radius="30dp"/>
+            <corners android:radius="20dp"/>
         </shape>
     </item>
 </layer-list>
