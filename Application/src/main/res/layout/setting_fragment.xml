@@ -1,6 +1,5 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/settingView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,6 +12,105 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/homeSetting"
+            android:background="@drawable/background_box_v1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/settingTitleTextView0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="홈 화면"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/setting0_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/setting0_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingTitleTextView0">
+
+                <TextView
+                    android:id="@+id/mealTimeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="급식 표시"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mealTimeDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="시간별로 급식 정보 표시 여부를 설정합니다." />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/mealTimeSwitch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="아침" />
+
+                <Button
+                    android:id="@+id/mealTimeButton1"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_box"
+                    android:text="아침 시간 선택 [ ~00:00 ]" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/mealTimeSwitch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="점심" />
+
+                <Button
+                    android:id="@+id/mealTimeButton2"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_box"
+                    android:text="점심 시간 선택 [ ~00:00 ]" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/mealTimeSwitch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="저녁" />
+
+                <Button
+                    android:id="@+id/mealTimeButton3"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_box"
+                    android:text="저녁 시간 선택 [ ~00:00 ]" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/mealSetting"
@@ -30,18 +128,21 @@
                 android:text="@string/meal_description"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/setting1_1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:id="@+id/linearLayout"
+                android:id="@+id/setting1_1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
                 android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/setting1_2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/settingTitleTextView1">
@@ -50,112 +151,161 @@
                     android:id="@+id/allergySettingTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
                     android:padding="4dp"
-                    android:textStyle="bold"
-                    android:text="알러지 정보" />
+                    android:text="@string/allergyTitle"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/allergySettingDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="알러지 정보를 미리 설정해두세요. 급식 정보에 표시됩니다." />
+                    android:text="@string/allergyDescription" />
 
                 <CheckBox
                     android:id="@+id/allergySetting1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="난류" />
+                    android:text="@string/allergy1" />
+
                 <CheckBox
                     android:id="@+id/allergySetting2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="우유" />
+                    android:text="@string/allergy2" />
+
                 <CheckBox
                     android:id="@+id/allergySetting3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="메밀" />
+                    android:text="@string/allergy3" />
+
                 <CheckBox
                     android:id="@+id/allergySetting4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="땅콩" />
+                    android:text="@string/allergy4" />
+
                 <CheckBox
                     android:id="@+id/allergySetting5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="대두" />
+                    android:text="@string/allergy5" />
+
                 <CheckBox
                     android:id="@+id/allergySetting6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="밀" />
+                    android:text="@string/allergy6" />
+
                 <CheckBox
                     android:id="@+id/allergySetting7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="고등어" />
+                    android:text="@string/allergy7" />
+
                 <CheckBox
                     android:id="@+id/allergySetting8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="게" />
+                    android:text="@string/allergy8" />
+
                 <CheckBox
                     android:id="@+id/allergySetting9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="새우" />
+                    android:text="@string/allergy9" />
+
                 <CheckBox
                     android:id="@+id/allergySetting10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="돼지고기" />
+                    android:text="@string/allergy10" />
+
                 <CheckBox
                     android:id="@+id/allergySetting11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="복숭아" />
+                    android:text="@string/allergy11" />
+
                 <CheckBox
                     android:id="@+id/allergySetting12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="토마토" />
+                    android:text="@string/allergy12" />
+
                 <CheckBox
                     android:id="@+id/allergySetting13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="아황산류" />
+                    android:text="@string/allergy13" />
+
                 <CheckBox
                     android:id="@+id/allergySetting14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="호두" />
+                    android:text="@string/allergy14" />
+
                 <CheckBox
                     android:id="@+id/allergySetting15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="닭고기" />
+                    android:text="@string/allergy15" />
+
                 <CheckBox
                     android:id="@+id/allergySetting16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="쇠고기" />
+                    android:text="@string/allergy16" />
+
                 <CheckBox
                     android:id="@+id/allergySetting17"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="오징어" />
+                    android:text="@string/allergy17" />
+
                 <CheckBox
                     android:id="@+id/allergySetting18"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="조개류" />
+                    android:text="@string/allergy18" />
+
                 <CheckBox
                     android:id="@+id/allergySetting19"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="잣" />
+                    android:text="@string/allergy19" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/setting1_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting1_1">
+
+                <TextView
+                    android:id="@+id/autoStarFoodTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="특식 필터링"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/autoStarFoodDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="급식 이름에 따라 자동으로 특식으로 선택합니다. (준비중)" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
