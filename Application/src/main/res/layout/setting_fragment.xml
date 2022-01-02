@@ -1,0 +1,163 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mealSetting"
+            android:background="@drawable/background_box_v1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/settingTitleTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/meal_description"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingTitleTextView1">
+
+                <TextView
+                    android:id="@+id/allergySettingTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:text="알러지 정보" />
+
+                <TextView
+                    android:id="@+id/allergySettingDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="알러지 정보를 미리 설정해두세요. 급식 정보에 표시됩니다." />
+
+                <CheckBox
+                    android:id="@+id/allergySetting1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="난류" />
+                <CheckBox
+                    android:id="@+id/allergySetting2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="우유" />
+                <CheckBox
+                    android:id="@+id/allergySetting3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="메밀" />
+                <CheckBox
+                    android:id="@+id/allergySetting4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="땅콩" />
+                <CheckBox
+                    android:id="@+id/allergySetting5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="대두" />
+                <CheckBox
+                    android:id="@+id/allergySetting6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="밀" />
+                <CheckBox
+                    android:id="@+id/allergySetting7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="고등어" />
+                <CheckBox
+                    android:id="@+id/allergySetting8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게" />
+                <CheckBox
+                    android:id="@+id/allergySetting9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="새우" />
+                <CheckBox
+                    android:id="@+id/allergySetting10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="돼지고기" />
+                <CheckBox
+                    android:id="@+id/allergySetting11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="복숭아" />
+                <CheckBox
+                    android:id="@+id/allergySetting12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="토마토" />
+                <CheckBox
+                    android:id="@+id/allergySetting13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="아황산류" />
+                <CheckBox
+                    android:id="@+id/allergySetting14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="호두" />
+                <CheckBox
+                    android:id="@+id/allergySetting15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="닭고기" />
+                <CheckBox
+                    android:id="@+id/allergySetting16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="쇠고기" />
+                <CheckBox
+                    android:id="@+id/allergySetting17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오징어" />
+                <CheckBox
+                    android:id="@+id/allergySetting18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="조개류" />
+                <CheckBox
+                    android:id="@+id/allergySetting19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="잣" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

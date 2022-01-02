@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.home_menu -> changeFragment(HomeFragment())
                 R.id.meal_menu -> changeFragment(MealFragment())
                 R.id.timetable_menu -> changeFragment(TimetableFragment())
+                R.id.setting_menu -> changeFragment(SettingFragment())
             }
             return true
         }
