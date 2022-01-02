@@ -7,6 +7,38 @@
     android:layout_marginTop="8dp"
     android:layout_marginEnd="8dp"
     android:fillViewport="true">
+    <!-- NOTE -->
+    <!--
+        [홈 화면]
+         * 급식 표시
+         * 바로가기 설정
+            * 학교 전화
+            * 학교 웹사이트
+            * 리로스쿨
+            * 클래스팅
+            * 마이크로소프트 팀즈
+            * 구글 클래스룸
+            * Zoom
+            * Zoom 바로 연결
+            * 자가진단
+            * 아이엠스쿨
+       [급식]
+         * 알러지 정보
+         * 특식 구분 <비활성화>
+       [시간표]
+         * 시간
+         * 시간표 편집
+         * 토요일 시간표 유/무
+         * 일요일 시간표 유/무
+       [연구소]
+         * 자가진단 팝업?
+         * Oauth2 데이터 백업 <인공지능 연결 대비 | 비활성화 >
+           * Google Assistants / NUGU
+       [기타]
+         * 웨어러블 설정 전송
+         * 포럼 서버 <디스코드>
+         * 정보
+    -->
 
     <LinearLayout
         android:layout_width="match_parent"
