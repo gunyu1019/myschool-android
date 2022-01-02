@@ -1,14 +1,19 @@
 <resources>
     <string name="app_name">마이스쿨 - 급식, 시간표</string>
+
     <string name="home">홈</string>
     <string name="meal_description">급식</string>
     <string name="timetable_description">시간표</string>
     <string name="setting_description">설정</string>
+
     <string name="base_meal_description">오늘의 급식</string>
     <string name="base_timetable_description">오늘의 시간표</string>
+
+    <string name="timetable_time">%d교시</string>
 
     <string name="meal_breakfast">아침</string>
     <string name="meal_lunch">점심</string>
     <string name="meal_dinner">저녁</string>
     <string name="right_comment">확인</string>
+    <string name="subject_example">지구과학 II</string>
 </resources>

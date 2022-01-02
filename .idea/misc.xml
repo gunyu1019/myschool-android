@@ -6,14 +6,21 @@
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/background_box.xml" value="0.4015625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/background_box_v1.xml" value="0.3299145299145299" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/background_box_v2.xml" value="0.3299145299145299" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/background_box_v3.xml" value="0.3299145299145299" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/background_box_v3_bold.xml" value="0.3299145299145299" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-night/button_box.xml" value="0.3299145299145299" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-v24/background_box_v2.xml" value="0.3299145299145299" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-v24/background_box_v3.xml" value="0.3299145299145299" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-v24/background_box_v3_bold.xml" value="0.3299145299145299" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-v24/button_box.xml" value="0.3299145299145299" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4015625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable-v24/popup_box.xml" value="0.33974358974358976" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/background_box.xml" value="0.2890625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/background_box_v1.xml" value="0.3299145299145299" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/background_box_v2.xml" value="0.3299145299145299" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/background_box_v3.xml" value="0.3299145299145299" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/background_box_v3_bold.xml" value="0.33974358974358976" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/background_box_v4.xml" value="0.14957264957264957" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/ic_baseline_home.xml" value="0.4015625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/ic_baseline_search.xml" value="0.4015625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/drawable/ic_baseline_star.xml" value="0.4015625" />
@@ -30,7 +37,8 @@
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/meal_item.xml" value="0.3854166666666667" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/meal_section_item.xml" value="0.5" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/starlink_item.xml" value="0.3854166666666667" />
-        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/timetable_item.xml" value="0.75" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/timetable_item.xml" value="0.7069408740359897" />
+        <entry key="..\:/Android/SchoolMeal/Application/src/main/res/layout/tmetable_fragment.xml" value="0.31666666666666665" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/menu/buttom_menu.xml" value="0.3854166666666667" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.4015625" />
         <entry key="..\:/Android/SchoolMeal/Application/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.4015625" />

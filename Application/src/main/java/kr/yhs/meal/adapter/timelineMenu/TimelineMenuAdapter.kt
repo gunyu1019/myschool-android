@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kr.yhs.meal.R
 
 
-class TimelineMenuAdapter(private var data: ArrayList<TimelineMenuData>? = null): RecyclerView.Adapter<TimelineMenuViewHolder>() {
+class TimelineMenuAdapter(private val context: Context, private var data: ArrayList<TimelineMenuData>? = null): RecyclerView.Adapter<TimelineMenuViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TimelineMenuViewHolder {
         val context: Context = parent.context
         val view: View = LayoutInflater
@@ -20,7 +20,7 @@ class TimelineMenuAdapter(private var data: ArrayList<TimelineMenuData>? = null)
     override fun onBindViewHolder(holder: TimelineMenuViewHolder, position: Int) {
         if (this.data == null)
             return
-        holder.onBind(this.data!![position], position, this)
+        holder.onBind(this.data!![position], position, context)
     }
 
     override fun getItemCount(): Int {

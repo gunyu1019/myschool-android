@@ -1,0 +1,220 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mealView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/timetable_leftBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/timetableDatetime"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_left" />
+
+            <TextView
+                android:id="@+id/timetableDatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2021년 12월 4주차 [이번 주]"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/timetable_rightBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/timetableDatetime"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_right" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/editButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/timetableTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:id="@+id/weekendTableRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/baseMonday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="월요일"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/baseTuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="화요일"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/baseWednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="수요일"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/baseThursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="목요일"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/baseFriday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="금요일"
+                            android:textAlignment="center" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/TableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/timetable_time1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="1교시" />
+
+                        <TextView
+                            android:id="@+id/timetable_mon1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@drawable/background_box_v3"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="프로그래밍" />
+
+                        <TextView
+                            android:id="@+id/timetable_tue1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@drawable/background_box_v3"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="프로그래밍" />
+
+                        <TextView
+                            android:id="@+id/timetable_wen1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@drawable/background_box_v3"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="프로그래밍" />
+
+                        <TextView
+                            android:id="@+id/timetable_thr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@drawable/background_box_v3"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="프로그래밍" />
+
+                        <TextView
+                            android:id="@+id/timetable_fri1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@drawable/background_box_v3"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="프로그래밍" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/editButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_box_v3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                app:srcCompat="@drawable/ic_baseline_edit" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="시간표 편집" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

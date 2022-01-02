@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.google.android.material.navigation.NavigationBarView
 import kr.yhs.meal.databinding.ActivityMainBinding
 
 
@@ -19,8 +18,9 @@ class MainActivity : AppCompatActivity() {
     private fun bottomNavigationActivity(): (MenuItem) -> Boolean {
         return fun(item: MenuItem): Boolean {
             when(item.itemId) {
-                R.id.home_menu -> changeFragment(HomeFragement())
-                R.id.meal_menu -> changeFragment(MealFragement())
+                R.id.home_menu -> changeFragment(HomeFragment())
+                R.id.meal_menu -> changeFragment(MealFragment())
+                R.id.timetable_menu -> changeFragment(TimetableFragment())
             }
             return true
         }
@@ -33,6 +33,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.bottomNavigationView.setOnItemSelectedListener(bottomNavigationActivity())
-        changeFragment(HomeFragement())
+        changeFragment(HomeFragment())
     }
 }

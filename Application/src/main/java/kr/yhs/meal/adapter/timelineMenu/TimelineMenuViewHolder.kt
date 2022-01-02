@@ -1,31 +1,22 @@
 package kr.yhs.meal.adapter.timelineMenu
 
+import android.content.Context
 import android.view.View
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import kr.yhs.meal.R
 
 class TimelineMenuViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    private var leftBar = itemView.findViewById<ImageView>(R.id.timelineLeft)
-    private var rightBar = itemView.findViewById<ImageView>(R.id.timelineRight)
-    private var center = itemView.findViewById<ImageView>(R.id.timelineCenter)
+    private var timeTextView = itemView.findViewById<TextView>(R.id.timeTextView)
     private var subjectTextView = itemView.findViewById<TextView>(R.id.subjectTextView)
+    private var itemBox = itemView.findViewById<ConstraintLayout>(R.id.itemBox)
 
-    fun onBind(data: TimelineMenuData, position: Int, adapter: TimelineMenuAdapter) {
-        if (data.leftBar?:(position != 0))
-            leftBar.visibility = View.VISIBLE
-        else
-            leftBar.visibility = View.INVISIBLE
-        if (data.rightBar?:(position != adapter.itemCount - 1))
-            rightBar.visibility = View.VISIBLE
-        else
-            rightBar.visibility = View.INVISIBLE
+    fun onBind(data: TimelineMenuData, position: Int, context: Context) {
+        timeTextView.text = context.getString(R.string.timetable_time, position + 1)
         subjectTextView.text = data.name
-
         if (data.center) {
-            center.setImageResource(R.drawable.timetable_current_shape)
+            itemBox.background = context.getDrawable(R.drawable.background_box_v3_bold)
         }
     }
 }

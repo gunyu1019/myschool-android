@@ -3,50 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/itemBox"
-    android:layout_width="70dp"
+    android:layout_width="80dp"
     android:layout_height="100dp"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="@drawable/background_box_v3">
 
-    <ImageView
-        android:id="@+id/timelineLeft"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/timelineRight"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/timetable_line" />
-
-    <ImageView
-        android:id="@+id/timelineRight"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/timelineLeft"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/timetable_line" />
-
-    <ImageView
-        android:id="@+id/timelineCenter"
-        android:layout_width="19dp"
-        android:layout_height="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/timetable_time"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/subjectTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/timetable_shape" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/subjectTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:gravity="center"
-        android:text="지구과학II"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/timelineCenter"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/subject_example"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

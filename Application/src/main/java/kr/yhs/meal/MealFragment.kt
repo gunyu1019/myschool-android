@@ -10,7 +10,7 @@ import kr.yhs.meal.adapter.mealSection.MealSectionAdapter
 import kr.yhs.meal.adapter.mealSection.MealSectionData
 import kr.yhs.meal.databinding.MealFragmentBinding
 
-class MealFragement : Fragment(R.layout.meal_fragment) {
+class MealFragment : Fragment(R.layout.meal_fragment) {
     private var mBinding: MealFragmentBinding? = null
     private val binding get() = mBinding!!
 

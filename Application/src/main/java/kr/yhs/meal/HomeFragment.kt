@@ -13,7 +13,7 @@ import kr.yhs.meal.adapter.timelineMenu.TimelineMenuAdapter
 import kr.yhs.meal.adapter.timelineMenu.TimelineMenuData
 import kr.yhs.meal.databinding.HomeFragmentBinding
 
-class HomeFragement : Fragment(R.layout.home_fragment) {
+class HomeFragment : Fragment(R.layout.home_fragment) {
     private var mBinding: HomeFragmentBinding? = null
     private val binding get() = mBinding!!
 
@@ -68,6 +68,6 @@ class HomeFragement : Fragment(R.layout.home_fragment) {
                 "프로그래밍"
             )
         )
-        binding.homeTimetableRecyclerView.adapter = TimelineMenuAdapter(timetableItem)
+        binding.homeTimetableRecyclerView.adapter = TimelineMenuAdapter(this.requireContext(), timetableItem)
     }
 }
