@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kr.yhs.meal">
+    package="kr.yhs.school">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SchoolMeal">
         <activity
-            android:name=".MainActivity"
+            android:name="kr.yhs.school.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PopupActivity"
+            android:name="kr.yhs.school.PopupActivity"
             android:theme="@android:style/Theme.Dialog" />
     </application>
 

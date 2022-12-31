@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "kr.yhs.meal"
+        applicationId "kr.yhs.school"
         minSdk 26
         targetSdk 32
         versionCode 1
